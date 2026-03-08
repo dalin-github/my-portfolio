@@ -1,123 +1,86 @@
 <template>
   <section class="hero" id="hero">
     <div class="hero-content">
-      <!-- Text -->
+
       <div class="hero-text">
-        <h2>Hi, I'm Harch Dalin</h2>
-        <p>
-          Final-year IT Engineering student passionate about turning ideas into
-          digital solutions through technology.
-        </p>
-        <a href="#projects" class="cta-btn">View My Projects</a>
+        <h2>Hi, I'm Harch Dalin ✨</h2>
+        <p>Thank you for your consideration and time for reviewing my CV and Portfolio. Nice to meet you ☘️</p>
+        <a href="#projects" class="cta-btn">View My Projects →</a>
       </div>
 
-      <!-- Image carousel -->
-      <div class="hero-image-stack">
-        <PhotoCarousel :images="availableImages" />
+      <div class="hero-photos">
+        <img src="/profile1.jpg"  class="photo photo-1" alt="photo 1" />
+        <img src="/profile4.jpg"  class="photo photo-2" alt="photo 2" />
+        <img src="/profile5.jpg"  class="photo photo-3" alt="photo 3" />
+        <img src="/profile.jpg"   class="photo photo-4" alt="photo 4" />
       </div>
+
     </div>
   </section>
 </template>
 
-<script setup>
-import PhotoCarousel from './PhotoCarousel.vue'
-
-// list of possible profile images; place them in /public
-const availableImages = [
-  '/profile1.jpg',
-  '/profile.jpg',
-  '/profile5.jpg',
-]
-</script>
-
 <style scoped>
-/* Hero section */
-.hero {
-  padding: 100px 20px 80px;
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
-  position: relative;
-  overflow: hidden;
-  color: #333;
-}
-
-.hero .hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Text */
-.hero-text {
-  flex: 1 1 400px;
-  padding-right: 20px;
-  text-align: left;
-}
-
-.hero h2 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--accent);
-  animation: fadeIn 1.2s ease-out;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-top: 12px;
-  animation: fadeIn 1.4s ease-out;
-}
-
-/* Call-to-action button */
 .cta-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   margin-top: 20px;
-  padding: 12px 24px;
-  background: var(--accent);
+  padding: 10px 22px;
+  background: var(--text-color);
   color: #fff;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 0.9rem;
+  transition: background 0.2s;
 }
+.cta-btn:hover { background: var(--accent); }
 
-.cta-btn:hover {
-  background: var(--accent-hover);
-  transform: translateY(-2px);
-}
-
-/* Image stack */
-.hero-image-stack {
-  flex: 1 1 300px;
-  max-width: 300px;
+/* Photo stack */
+.hero-photos {
+  position: relative;
+  width: 320px;
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-shrink: 0;
 }
 
-/* Profile images inside carousel */
-.hero .profile {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 6px solid rgba(255,255,255,0.9);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease;
-  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+.photo {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 3px solid #fff;
+  box-shadow: 0 8px 24px rgba(90,122,74,0.13);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.photo:hover {
+  transform: scale(1.06) rotate(0deg) !important;
+  box-shadow: 0 14px 32px rgba(90,122,74,0.2);
+  z-index: 10;
 }
 
-.hero .profile:hover {
-  transform: scale(1.05);
+/* Position each photo in the stack */
+.photo-1 {
+  width: 155px; height: 155px;
+  top: 0; left: 20px;
+  transform: rotate(-3deg);
+  z-index: 3;
 }
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.photo-2 {
+  width: 130px; height: 130px;
+  top: 10px; right: 10px;
+  transform: rotate(4deg);
+  z-index: 2;
+}
+.photo-3 {
+  width: 145px; height: 145px;
+  bottom: 20px; left: 0;
+  transform: rotate(2deg);
+  z-index: 4;
+}
+.photo-4 {
+  width: 155px; height: 155px;
+  bottom: 10px; right: 20px;
+  transform: rotate(-4deg);
+  z-index: 3;
 }
 </style>

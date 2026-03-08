@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2>🛠 Projects</h2>
     <div class="projects-grid">
       <ProjectCard
         title="Water Quality Prediction"
@@ -35,10 +35,11 @@
         repo="#"
       />
     </div>
+    <div class="view-more">
+      <a href="" target="_blank">View More →</a>
+    </div>
   </section>
 </template>
-
-
 
 <script setup>
 import ProjectCard from './ProjectCard.vue'

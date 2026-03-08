@@ -1,9 +1,9 @@
 <template>
   <section id="volunteer" class="section">
-    <h2>Volunteer & Internship</h2>
+    <h2>🌱 Volunteer & Internship</h2>
     <div class="volunteer-grid">
       <div v-for="item in volunteer" :key="item.title" class="volunteer-card">
-        <img :src="item.image" :alt="item.title" class="volunteer-image" />
+        <img v-if="item.image" :src="item.image" :alt="item.title" class="volunteer-image" />
         <div class="volunteer-content">
           <h3>{{ item.title }}</h3>
           <p class="volunteer-date">{{ item.date }}</p>
@@ -18,8 +18,6 @@
 
 <script setup>
 import { ref } from 'vue'
-
-// ✅ Only your experiences, with your own images
 const volunteer = ref([
   {
     title: 'Food Team Volunteer — Earth Hour Cambodia',
@@ -28,7 +26,7 @@ const volunteer = ref([
       'Experienced meditation and learning about nature, animals, and humans',
       'Appreciated efforts to reduce plastic and organized food and drinks'
     ],
-    image: '/earth-hour.jpg' // replace with your actual image filename
+    image: '/earth-hour.jpg'
   },
   {
     title: 'Logistics Volunteer — 10th Engineering Day at RUPP',
@@ -64,51 +62,18 @@ const volunteer = ref([
 <style scoped>
 .volunteer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
-
-.volunteer-card {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.volunteer-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
 .volunteer-image {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+  width: 100%; height: 160px; object-fit: cover; display: block;
 }
-
-.volunteer-content {
-  padding: 16px;
-}
-
+.volunteer-content { padding: 16px; }
 .volunteer-content h3 {
-  margin: 0 0 6px;
-  font-size: 1.1rem;
-  color: var(--accent);
-}
-
-.volunteer-date {
-  font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 8px;
-}
-
-.volunteer-details {
-  list-style: disc;
-  padding-left: 18px;
-  margin: 0;
-  font-size: 0.9rem;
-  color: #555;
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color);
   line-height: 1.4;
 }
 </style>
