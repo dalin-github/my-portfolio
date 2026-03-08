@@ -8,7 +8,7 @@
           <strong>
             <a href="https://www.rupp.edu.kh/" target="_blank">Royal University of Phnom Penh</a>
           </strong>
-          <em>Bachelor's Degree in IT Engineering</em>
+          <em>Bachelor's Degree in Information Technology Engineering</em>
         </div>
         <span class="edu-year">2023 – Present</span>
       </div>

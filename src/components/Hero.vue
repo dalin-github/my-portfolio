@@ -3,7 +3,7 @@
     <div class="hero-content">
 
       <div class="hero-text">
-        <h2>Hi, I'm Harch Dalin ✨</h2>
+        <h2>Hi, I'm Dalin ✨</h2>
         <p>Thank you for your consideration and time for reviewing my CV and Portfolio. Nice to meet you ☘️</p>
         <a href="#projects" class="cta-btn">View My Projects →</a>
       </div>
