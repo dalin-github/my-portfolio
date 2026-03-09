@@ -3,12 +3,21 @@
     <h2>🛠 Projects</h2>
     <div class="projects-grid">
       <ProjectCard
+        title="AWS Academy Graduate - Machine Learning Foundations "
+        date="2025"
+        description="Learning Basic Machine Learning is an introductory program that teaches the basics of machine learning, artificial intelligence, and deep learning"
+        tech="AWS, Machine Learning"
+        source="/aws_ml.jpg"
+        repo="https://www.credly.com/badges/b557cffb-1c8a-4356-85f7-7acc5e97d9a1/print"
+        repoIcon="credly"
+      />
+      <ProjectCard
         title="Water Quality Prediction"
         date="2025 – 2026"
         description="End-to-end AI system predicting water quality using Python and Jupyter Notebook for data cleaning, analysis, and ML. Results deployed via Streamlit with a frontend built in JavaScript, HTML, CSS, PHP, and Node.js."
         tech="Python, Jupyter Notebook, Streamlit, JavaScript, HTML, CSS, PHP, Node.js"
         source="/water-quality.png"
-        repo="#"
+        repo="https://github.com/dalin-github"
       />
       <ProjectCard
         title="Market Basket Analysis with Apriori Algorithm"
@@ -16,7 +25,7 @@
         description="Applied Apriori algorithm with Lift filtering to analyze transactions. Built with Python, Pandas, Mlxtend, and Seaborn to transform raw data into business intelligence for smarter product placement and bundling."
         tech="Python, Pandas, Mlxtend, Seaborn"
         source="/market-basket.png"
-        repo="#"
+        repo="https://github.com/dalin-github"
       />
       <ProjectCard
         title="Rokmerl Tourism Website"
@@ -24,7 +33,7 @@
         description="Tourism platform guiding visitors to places, hotels, and travel info in Cambodia. Developed with Laravel, Blade templates, PHP, JavaScript, HTML, CSS, and MySQL backend."
         tech="Laravel, PHP, MySQL, JavaScript, HTML, CSS"
         source="/rokmer.png"
-        repo="#"
+        repo="https://github.com/dalin-github"
       />
       <ProjectCard
         title="Book Store Management System"

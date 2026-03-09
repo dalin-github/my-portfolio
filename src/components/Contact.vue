@@ -15,7 +15,7 @@
           <span class="divider-dot">·</span>
           <a href="https://t.me/+85589764768" target="_blank" class="contact-icon-btn tg-btn">
             <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            Telegram
+            089 764 768
           </a>
           <span class="divider-dot">·</span>
           <a href="mailto:dalinharch23@gmail.com" class="contact-icon-btn">
@@ -33,7 +33,7 @@
       <div class="form-row">
         <div class="form-field">
           <label>Your Name*</label>
-          <input v-model="form.name" type="text" placeholder="Harch Dalin" />
+          <input v-model="form.name" type="text" placeholder="Enter your name" />
         </div>
         <div class="form-field">
           <label>Company Name</label>
@@ -47,7 +47,7 @@
         </div>
         <div class="form-field">
           <label>Phone Number*</label>
-          <input v-model="form.phone" type="tel" placeholder="+855 ..." />
+          <input v-model="form.phone" type="tel" placeholder="+855 123 456 789" />
         </div>
       </div>
       <div class="form-field">
@@ -229,9 +229,53 @@ input:focus, textarea:focus { border-bottom-color: var(--accent); }
   font-weight: 500;
 }
 
-@media (max-width: 600px) {
-  .form-row { grid-template-columns: 1fr; }
-  .form-header { flex-direction: column; align-items: flex-start; }
-  .contact-form-card { padding: 20px; }
+@media (max-width: 640px) {
+  .contact-form-card {
+    padding: 18px 16px 20px;
+    border-radius: 14px;
+  }
+  .form-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .contact-sub {
+    font-size: 0.88rem;
+  }
+  .contact-links {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .divider-dot {
+    display: none;
+  }
+  .contact-icon-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .form-info {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+  .info-item {
+    justify-content: flex-start;
+  }
+  .send-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 </style>
