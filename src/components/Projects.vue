@@ -39,6 +39,15 @@
         repoIcon="credly"
       />
       <ProjectCard
+        title="Skincare Review & Shopping App"
+        date=" January 2026"
+        description="A native Android app where users can browse skincare products, view product details and prices, read reviews, and add items to their basket. Designed the UI/UX for the app, focusing on clear navigation and an easy shopping experience."
+        tech="Android Studio, Kotlin, Java"
+        source="/mobile_app.png"
+        repo="https://github.com/dalin-github"
+        repoIcon="github"
+      />
+      <ProjectCard
         title="Water Quality Prediction"
         date="2025 – 2026"
         description="End-to-end AI system predicting water quality using Python and Jupyter Notebook for data cleaning, analysis, and ML. Results deployed via Streamlit with a frontend built in JavaScript, HTML, CSS, PHP, and Node.js."
