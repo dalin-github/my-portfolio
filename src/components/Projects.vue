@@ -3,6 +3,33 @@
     <h2>🛠 Projects</h2>
     <div class="projects-grid">
       <ProjectCard
+        title="Web-based Student Management System"
+        date="2026"
+        description="End-to-end Laravel MVC platform digitizing student records for Cambodian high schools; replaced paper-based workflows with real-time management of attendance, grades, schedules, and announcements. Implemented secure role-based access for admin, teacher, student, and parent to enable role-specific dashboards and workflows."
+        tech="Laravel, PHP, MySQL, Blade, Tailwind CSS, JavaScript"
+        source="/student_management.png"
+        repo="https://github.com/dalin-github"
+        repoIcon="github"
+      />
+      <ProjectCard
+        title="Hotel Booking System"
+        date="June 2026"
+        description="Full-stack booking platform validated via structured Software Quality Engineering and black-box testing. Designed and executed 15+ test cases across room search, sign-up/login, and booking flows; discovered and reported a booking-flow defect that improved reliability."
+        tech="QA Testing, Next.js, React, Supabase (PostgreSQL), Auth.js, bcrypt"
+        source="/hotel_booking.png"
+        repo="https://github.com/Laysin1/nextjs-hotel-booking.git"
+        repoIcon="github"
+      />
+      <ProjectCard
+        title="SmartPark — Automated Parking Fee Testing"
+        date="May 2026"
+        description="Test-driven system for parking fee calculation and session management with extensive automated verification. Authored 30+ unit, integration, and property-based tests using RED–GREEN–REFACTOR and produced a traceability matrix mapping every business rule to its verifying test."
+        tech="Software Testing, C#, xUnit, FsCheck, .NET, TDD"
+        source="/smartpark.png"
+        repo="https://github.com/dalin-github/automate-test-E5-HarchDalin"
+        repoIcon="github"
+      />
+      <ProjectCard
         title="AWS Academy Graduate - Machine Learning Foundations "
         date="2025"
         description="Learning Basic Machine Learning is an introductory program that teaches the basics of machine learning, artificial intelligence, and deep learning"
