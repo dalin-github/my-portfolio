@@ -47,6 +47,7 @@ const tools = ref([
   { name: 'HTML',      icon: '/html.jpg' },
   { name: 'CSS',       icon: '/css.png' },
   { name: 'Excel',       icon: '/excel.png' },
+  { name: 'Andriod Studio',       icon: '/image.png' },
 ])
 </script>
 
